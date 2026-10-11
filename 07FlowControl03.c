@@ -7,6 +7,10 @@ int main() {
     printf("Enter a number: ");
     scanf("%d", &number);
 
+    // nested if-else works like having if else in another if or else statement.
+    // For example, 3 conditions of if, else if and else have another 3 nested if else else if conditioning
+    // Then wallah, we have total 3X3 or 9 pathways.
+
     if (number < 0) {
         printf("Your Fortune: Negative numbers suit you.\n      You were never meant to follow the positive path.\n");
     }

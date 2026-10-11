@@ -13,15 +13,18 @@ int main(){
     //If you don't then here is the brief for yaa,
     //buffer overflow simply means putting more data in a temporary dtorage
     //So why will you dump fake character in your name? HUHHH????
-    scanf("%49s", name); 
+    // scanf("%49s", name);
+    fgets(name, sizeof(name),stdin);
     printf("Enter your age: ");
     scanf("%d", &age);
     printf("Enter your university: ");
     //Same goes for your University name
-    scanf("%49s", university);
+    // scanf("%49s", university);
+    fgets(university, sizeof(university),stdin);
     printf("Enter your department: ");
     //Same goes for your Department name
-    scanf("%49s", department);
+    // scanf("%49s", department);
+    fgets(department, sizeof(department),stdin);
     printf("Enter your CGPA: ");
     scanf("%f", &cgpa);
 
